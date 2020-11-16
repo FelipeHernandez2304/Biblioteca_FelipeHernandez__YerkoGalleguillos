@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private ProgressBar pb;
@@ -32,7 +34,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void github(View v)
     {
+        ArrayList<String> valores = new ArrayList<String>();
+
+        valores.add("Farenheith");
+        valores.add("Revival");
+        valores.add("El Alquimista");
+        valores.add("El Poder");
+        valores.add("El Despertar");
+
+
+
         Intent i = new Intent(this,github_act.class);
+        i.putExtra("intercambioValores", valores);
         startActivity(i);
     }
 

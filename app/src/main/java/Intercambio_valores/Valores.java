@@ -2,27 +2,33 @@ package Intercambio_valores;
 
 public class Valores {
 
-    private String farenheith;
-    private String revival;
-    private String alquimista;
+    private int farenheith;
+    private int revival;
+    private int alquimista;
+    private int poder;
+    private int despertar;
+
+
 
     public Valores()
     {
-        farenheith = "5000";
-        revival = "12000";
-        alquimista = "45000";
+        farenheith = 7000;
+        revival = 22000;
+        alquimista = 45000;
+        poder =  88000;
+        despertar = 156000;
     }
 
-    public String getFarenheith()
+    public int getFarenheith()
     {
         return farenheith;
     }
-    public String getRevival()
+    public int getRevival()
     {
         return revival;
     }
-    public String getAlquimista()
-    {
-        return alquimista;
-    }
+    public int getAlquimista(){ return alquimista; }
+    public int getPoder() { return poder; }
+    public int getDespertar() { return despertar; }
+
 }
